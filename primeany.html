@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>anonymous functin</title>
+    </head>
+    <body>
+        <script>
+            //prime number
+var a = function (array) {
+    var arr = []
+    var number = 0
+    for (let i = 0; i < array.length; i++) {
+        number = array[i]
+
+        var isPrime=function(n) {
+            if (n <= 1)
+                return false;
+            for (let i = 2; i < n; i++)
+                if (n % i == 0)
+                    return false;
+
+            return true;
+        }
+        if (isPrime(number) === true) {
+            arr.push(number)
+        }
+    }
+    console.log(arr)
+}
+
+a([1, 2, 3, 4, 5])
+
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>IFFE functin</title>
+    </head>
+    <body>
+        <script>
+            //title caps
+(function (str) {
+    if ((str === null) || (str === ''))
+        return false;
+    else
+        str = str.toString();
+
+    console.log(str.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() +
+            txt.substr(1).toLowerCase();
+    }))
+})
+(['hello world'])
+
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>IFFE functin</title>
+    </head>
+    <body>
+        <script>
+    //rotate
+(function(array , k){
+    var reverse;
+    var a;
+             k = k % a.length;
+               if(k < 0){
+                 k += a.length;
+            
+               }
+         reverse=(a, 0, array.length - k - 1);
+        reverse=(a, array.length - k, array.length - 1);
+        reverse=(a, 0, array.length - 1);
+        console.log(reverse)
+})
+([1,2,3,4]);
+</script>
+</body>
+</html>
